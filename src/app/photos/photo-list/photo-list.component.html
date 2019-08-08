@@ -1,0 +1,7 @@
+<div class="text-center mb-3 mt-3">
+  <form>
+    <input class="rounded" type="search" placeholder="Search" aria-label="Search"
+           (keyup)="filter = $event.target.value" />
+  </form>
+</div>
+<ap-photos [photos]="photos | filterByDescription: filter"></ap-photos>
